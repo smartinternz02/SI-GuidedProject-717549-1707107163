@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prediction</title>
+    <style>
+        .heading {
+            text-align:left;
+        }
+        body {
+            background-image: url("https://cdn.wallpapersafari.com/72/69/u8UmGY.jpg");
+            background-size: cover;
+        }
+        .row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        #homeButton {
+            margin-right: 30px; /* Adjust the margin to move the button to the right */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:#00bfff;">SMART WATCH PREDICTION</h1>
+
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 text-right">
+                <a href="/" id="homeButton" class="btn btn-info btn-lg">Home</a>
+            </div>
+        </div>
+
+        <p>Click <a href="#" id="priceLink">here</a> to view the price of your smartwatch.</p>
+
+        <div id="pricePrediction" style="display: none;">
+            According to the details filled in the last page, your smartwatch price is $244.141
+        </div>
+
+        <script>
+             document.getElementById("priceLink").addEventListener("click", function() {
+                document.getElementById("pricePrediction").style.display = "block";
+        });
+
+
+        </script>
+    </div>
+</body>
+</html>
